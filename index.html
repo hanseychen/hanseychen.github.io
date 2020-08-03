@@ -7,6 +7,15 @@
 
 <style>
   /* General styles. */
+  body {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  a:link, a:visited {
+    color: bisque;
+    text-decoration: none;
+  }
+
   td {
     padding: 5px 10px 5px 10px;
   }
@@ -15,19 +24,25 @@
   .section-title {
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
+    color: lightsalmon;
   }
 
   .paper-title {
     font-weight: bold;
+    color:lightgreen;
   }
 
   .paper-authors {
     font-style: italic;
   }
 
+  .paper-authors b {
+    text-decoration: underline;
+  }
+
   /* ID-specific styles. */
   #content {
+    color: lightgray;
     width: 800px;
     margin: auto;
   }
@@ -35,6 +50,11 @@
   #my-name {
     font-size: 35px;
     font-weight: bold;
+  }
+
+  #my-pic {
+    border-style: dashed;
+    border-width: 2px;
   }
 </style>
 
@@ -60,14 +80,12 @@
       </tr>
       <tr>
         <td>
-          I am a Ph.D. candidate in the 
-          <a href="https://cse.osu.edu">Department of Computer Science and Engineering</a> at 
-          <a href="https://www.osu.edu">The Ohio State University</a>,
-          advised by
+          I am a Ph.D. candidate in the Department of Computer Science and 
+          Engineering at The Ohio State University, advised by
           <a href="http://web.cse.ohio-state.edu/~qin.34/">Dr. Feng Qin</a>.
           My research mainly focuses on combating bugs in cloud systems,
-          but I'm generally interested in any problems related to helping develpors deliver
-          dependable software programs.
+          but I'm generally interested in any problems related to helping 
+          develpors deliver dependable software programs.
         </td>
       </tr>
     </table>
@@ -80,8 +98,10 @@
           [<a href="https://conf.researchr.org/home/ase-2020">ASE'20</a>]
         </td>
         <td class="paper-info">
-          <div class="paper-title">
-            CoFI: Consistency-Guided Fault Injection for Cloud Systems
+          <div>
+            <span class="paper-title">
+              CoFI: Consistency-Guided Fault Injection for Cloud Systems
+            </span>
             [<a href="https://hanseychen.github.io/CoFI/">tool</a>]
           </div>
           <div class="paper-authors">
@@ -94,8 +114,10 @@
           [<a href="https://2019.ase-conferences.org">ASE'19</a>]
         </td>
         <td class="paper-info">
-          <div class="paper-title">
-            Understanding Exception-Related Bugs in Large-Scale Cloud Systems
+          <div>
+            <span class="paper-title">
+              Understanding Exception-Related Bugs in Large-Scale Cloud Systems
+            </span>
             [<a href="resources/eBugs.pdf">preprint</a>]
             [<a href="https://hanseychen.github.io/eBugs/">dataset</a>]
             [<a href="resources/Presentation-at-ASE-2019-Public.pptx">slides</a>]
@@ -110,10 +132,11 @@
           [<a href="https://www.cs.ucdavis.edu/fse2016/">FSE'16</a>]
         </td>
         <td class="paper-info">
-          <div class="paper-title">
-            <a href="http://202.119.32.195/cache/10/03/ics.nju.edu.cn/99202e5bda04e08af387460acf03f325/jiang_crash_2016.pdf">
+          <div>
+            <span class="paper-title">
               Crash Consistency Validation Made Easy
-            </a>
+            </span>
+            [<a href="https://dl.acm.org/doi/pdf/10.1145/2950290.2950327?casa_token=XZ7D1-CMfKsAAAAA:Tz1_l9xd9Zz7UKO1_A4VqR28xFEW3qEIIXfdYpBJNP43z6Twiy8Mwb67mN4OQT_eVxckGTafR2rPiA">paper</a>]
           </div>
           <div class="paper-authors">
             Yanyan Jiang, <b>Haicheng Chen</b>, Feng Qin, Chang Xu, Xiaoxing Ma, Jian Lu
@@ -184,11 +207,6 @@
           CSE 2421 - Systems I: Introduction to Low-Level Programming and Computer Organization
         </td>
       </tr>
-      <!--
-      <tr class="section-title">
-        <td colspan="2">Miscs</td>
-      </tr>
-      -->
       <tr class="section-title">
         <td colspan="2">
           Awards
